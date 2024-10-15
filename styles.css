@@ -1,0 +1,196 @@
+/* Allgemeine Stile */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+    background-color: #121212;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+/* Header */
+header {
+    background: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 1.8em;
+    color: #e50914;
+    /* Rote Farbe für Akzente */
+}
+
+nav {
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #e50914;
+}
+
+/* Hero Sektion */
+.hero {
+    height: 100vh;
+    background: url('hero-background.jpg') center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-top: 60px;
+    /* Platz für den fixierten Header */
+}
+
+.hero h2 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px #000;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+    text-shadow: 1px 1px 2px #000;
+}
+
+.btn-prominent {
+    padding: 15px 30px;
+    background-color: #e50914;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.btn-prominent:hover {
+    background-color: #b20710;
+    transform: scale(1.05);
+}
+
+/* Über Uns */
+.about {
+    padding: 100px 0;
+    background-color: #1e1e1e;
+    text-align: center;
+}
+
+.about h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.about p {
+    font-size: 1.1em;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+/* Tourdaten */
+.tour {
+    padding: 100px 0;
+    background-color: #121212;
+    text-align: center;
+}
+
+.tour h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.tour ul {
+    list-style: none;
+}
+
+.tour ul li {
+    font-size: 1.1em;
+    margin: 10px 0;
+}
+
+/* Footer / Kontakt */
+footer {
+    padding: 60px 0;
+    background-color: #1e1e1e;
+    text-align: center;
+}
+
+footer h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+footer p {
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+
+.social-media a {
+    margin: 0 10px;
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.social-media a:hover {
+    color: #e50914;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header .container {
+        flex-direction: column;
+    }
+
+    nav ul {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    nav ul li {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    .hero h2 {
+        font-size: 2em;
+    }
+
+    .hero p {
+        font-size: 1em;
+    }
+}
